@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">     
+    <link href="styles.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+
+	<link rel='shortcut icon' type='image/x-icon' href='/food/favicon.ico' />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	
+    <title>Recipe Repository</title>
+</head>
+<body>
+	<div class="appBody">
+	 
+	 <section class = "home" id="home">
+			<div class = "navbar-links">
+				<ul>
+					<li><a href = "#about">About</a></li>
+					<li><a href = "">Home</a></li>
+					<li><a href = "#recipes-Section">Recipes</a></li>
+				</ul>
+			</div>
+
+			<div class = "homeMain">
+				    <h1 id = "homeH1">Recipe Repository</h1>
+					<h2 id = "homeH2">Wake up your taste buds.</h2>
+					<a href = "#about">
+						<button id = "titleBtn" onmouseover = "styleMainH()" onmouseout = "styleMainL()">Learn more</button>
+					</a>
+			</div>
+			
+		</section>  
+		 
+		 
+		
+		<section class = "about" id ="about">
+			<div class="about-content" id="about-content">
+				<div class="about-images">
+					<a href="#about"><img src="/food/pancakes.png" alt="" class="pancakes"></a>
+					<a href="#about"><img src="/food/pasta.png" alt="" class="pasta"></a>
+					<a href="#about"><img src="/food/meat.png" alt="" class="meat"></a>
+					<a href="#about"><img src="/food/wine.png" alt="" class="wine"></a>
+				</div>
+				<div class="about-text">
+					<h1>About Us</h1>
+					<p class="about-par">
+						Recipe Repository specializes in offering the best experience. 
+						We guarantee top-notch quality and focus on having the trendiest recipes out there. 
+						Recipe Repository  features content for all levels of cooks and foodies. Our recipes and how-to guides are provided by 
+						some of the best chefs in the world. You can take these recipes through your culinary lifetime.
+						Our customers have always been and still are our main priority. We’re committed to working hard 
+						and building long-lasting relationships with them through our website. 
+						<a href="#recipes-Section"><button id = "exploreBtn" onmouseover = "PBorder()" onmouseout = "GBorder()" >Explore</button></a>
+					</p>
+					
+				</div>
+			</div>	
+ 
+		</section>
+
+		<section class = "recipes-Section" id = "recipes-Section">
+			<div class="filter-buttons">
+				<button class="btn" data-filter="all">All</button>
+				<button class="btn" data-filter="Breakfast">Breakfast</button>
+				<button class="btn" data-filter="Lunch">Lunch</button>
+				<button class="btn" data-filter="Dinner">Dinner</button>
+				<button class="btn" data-filter="Dessert">Desert</button>
+				<button class="btn" data-filter="Beverages">Beverages</button>
+			</div>
+			<div id = "recipes">
+				
+			</div>
+		</section>
+		
+		<div class="popupContainer" id="popupContainer"></div>
+		
+	<footer>
+		<div class="footer-section">
+			<div class="sectionLinks">
+				<a title="Back to top" href="#home">Home <i class="bi bi-house"></i></i></a> 
+				<a title="Recipes" href="#recipes-Section">Recipes <i class="bi bi-journal-arrow-up"></i></a>
+		    </div>	
+			<div class="info">
+				<h5>©2022. No rights reserved</h5>
+				<a  href="https://github.com/ChristosPts" target="_blank"><i class="bi-github"></i> https://github.com/ChristosPts</a>                
+			</div>   
+	</div>
+	</footer> 
+
+	</div>
+	 
+ 	<script src="/js/array.js" defer></script>
+    <script src="/js/script.js" defer></script>
+	<script src="/js/popup.js" defer></script>
+	<script src="/js/filter.js" defer></script>
+	<script src="/js/colors.js" defer></script>
+</body>
+</html>
